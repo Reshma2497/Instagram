@@ -111,7 +111,6 @@ private fun BottomBar(
                             contentDescription = ""
                         )
                     }
-
                 },
                 selected = selected,
                 onClick = { onSectionSelected(section) },

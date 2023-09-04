@@ -34,10 +34,6 @@ fun NewPost() {
     Column(
         modifier = Modifier
             .fillMaxWidth().verticalScroll(rememberScrollState())
-     //   .height(30.dp)
-//        .background(Color.LightGray)
-//        .padding(horizontal = 10.dp),
-//        horizontalAlignment = Alignment.CenterHorizontally
     ) {
         MyToolbar()
         Divider()
@@ -78,7 +74,6 @@ fun MyToolbar(modifier: Modifier = Modifier) {
         horizontalArrangement = Arrangement.SpaceBetween,
         verticalAlignment = Alignment.CenterVertically
     ) {
-        //Icon(ImageVector.vectorResource(R.drawable.ic_backarrow))
         Icon(
             ImageVector.vectorResource(id = R.drawable.ic_backarrow),
             contentDescription = ""
@@ -95,7 +90,6 @@ fun MyToolbar(modifier: Modifier = Modifier) {
             style = MaterialTheme.typography.button,
             color = Color.Blue
         )
-
     }
 }
 
@@ -153,13 +147,9 @@ fun PostToInstagram(modifier: Modifier=Modifier)
         )
         Text(
             text = "Ayushi",
-           // textAlign = TextAlign.Center,
             style = MaterialTheme.typography.h6,
-//            modifier = Modifier
-//                .padding(start = 20.dp)
         )
        ToggleButton(false)
-
     }
 }
 

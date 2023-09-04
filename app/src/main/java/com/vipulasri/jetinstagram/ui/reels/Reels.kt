@@ -55,10 +55,6 @@ private fun ReelsHeader() {
 private fun ReelsList() {
   val reels = ReelsRepository.getReels()
 
-/*
-  val configuration = ConfigurationAmbient.current
-  val reelsHeight = configuration.screenHeightDp.dp - bottomBarHeight
-*/
 
     LazyColumn{
 
